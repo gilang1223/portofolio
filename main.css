@@ -1,0 +1,150 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: "didot", sans-serif;
+    overflow-x: hidden;
+    /* background-color: #1E3E62; */
+    scroll-behavior: smooth;
+}
+p{
+    color: white;
+}
+#landing{
+    background-image: url(./aset/view-starry-night-sky-with-nature-mountains-landscape.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height:100vh;
+    width:100%;
+}
+nav ul{
+    background-color: #0B192C;
+    backdrop-filter:blur(25px);
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    position: fixed;
+    z-index:999;
+    height:60px;
+}
+nav ul a{
+    height:100%;
+    background-color: #0B192C;
+    display: flex;
+    text-decoration: none;
+    color: rgb(183, 182, 182);
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    width:90px;
+    transition:0.3s;
+}
+nav ul a:hover{
+border-bottom: 2px solid #ff660097;
+color: rgb(244, 244, 244);
+}
+#landing{
+    background-color: #1E3E62;
+    background-size:100%;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+}
+#landing .kontainer{
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.judul{
+    display: flex;
+    justify-content: center;
+    padding:40px;
+}
+#aboutme section{
+    background-color: #0B192C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:15px;
+    height:300px;
+    align-items: center;
+}
+#aboutme .perkenalan{
+    /* background-color: r; */
+    width:400px;
+}
+#aboutme .minat{
+    /* background-color: blanchedalmond; */
+    width:400px;
+}
+
+.judul{
+    /* background-color: #6060602a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+#works .carousel-inner{
+    height:500px;
+}
+.ct-kartu{
+    background-color: #0B192C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+}
+.kartu{
+    background-color: #0B192C;
+    border-radius: 5%;
+    padding:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ff6600;
+    color: black;
+}
+#project .wrap{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px){
+    #landing{
+        padding:0;
+        background-image: url(./aset/view-starry-night-sky-with-nature-mountains-landscape.jpg);
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height:100vh;
+        width:100%;
+    }
+    nav{
+        display: none;
+    }
+    #landing .kontainer{
+        flex-direction: column;
+    }
+    #aboutme section{
+        flex-direction: column;
+    }
+    .kenalan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
